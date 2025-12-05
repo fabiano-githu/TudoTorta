@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Torta</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" class="d-flex flex-column min-vh-100">
+
+<header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand brand-name" href="#top">
+                Tudo
+                <i class="fa-solid fa-pie-slice mx-1 logo-icon"></i>
+                <i class="fa-solid fa-bread-slice mx-1 logo-icon"></i>
+                Torta
+            </a>
+
+            <!-- Botão Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#top">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+
+                    <!-- Dropdown "Mais" -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li><a class="dropdown-item" href="#sobre">Quem Somos</a></li>
+                            <li><a class="dropdown-item" href="#comentarios">Comentários</a></li>
+                            <li><a class="dropdown-item" href="#contato">Contato</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#login">Área do Cliente</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Ícone Login -->
+                    <li class="nav-item ms-3">
+                        <a class="nav-link login-circle" href="#login" title="Login">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<!-- Bootstrap JS Bundle (Popper incluído) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+

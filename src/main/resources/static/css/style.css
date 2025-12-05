@@ -1,0 +1,241 @@
+/* ========================= */
+/* Logo / Navbar */.brand-name {
+                       font-family: 'Story Script', cursive; /* Fonte artística */
+                       font-size: 2.5rem;
+                       color: #0f131a;
+                       text-decoration: none;
+                       display: flex;
+                       align-items: center;
+                   }
+
+                 .logo-icon {
+                     color: #ffffff !important;
+                 }
+
+                 .logo-icon {
+                     color: #ffffff !important;
+                     filter: drop-shadow(0 0 2px rgba(0,0,0,0.3));
+                 }
+
+                 /* Hover suave */
+                 .logo-icon:hover {
+                     transform: scale(1.15);
+                     filter: drop-shadow(0 0 4px rgba(255,255,255,0.7));
+                 }
+
+
+
+/* Navbar links */
+.navbar .nav-link {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0f131a !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+
+.hero-section {
+    position: relative;
+    height: 60vh; /* diminui a altura para 60% da tela */
+    overflow: hidden;
+}
+
+.hero-section .carousel-item img {
+    object-fit: cover; /* cobre todo o espaço sem distorcer */
+    height: 60vh;      /* iguala altura de todas as imagens */
+    width: 100%;       /* garante que ocupe toda a largura */
+
+
+    /* ========================= */
+    /* Banner Profissional */
+    .hero-section .carousel-item img {
+        height: 500px; /* Altura fixa para uniformizar */
+        object-fit: cover; /* Preenche sem distorcer a imagem */
+    }
+
+    .hero-section .carousel-caption {
+        background: rgba(0,0,0,0.4); /* Fundo escuro semi-transparente para destaque do texto */
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* ========================= */
+    /* Cards de Produtos */
+    .product-card img {
+        height: 250px; /* Altura uniforme */
+        object-fit: cover; /* Preenche a imagem no card */
+    }
+
+    .product-card h5 {
+        font-size: 1.25rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+
+    /* ========================= */
+    /* Comentários */
+    .comment-carousel {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    /* ========================= */
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .hero-section .carousel-item img {
+            height: 300px;
+        }
+    }
+
+}
+/* ========================= */
+/* Cards de Produtos Profissionais */
+.product-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    height: 250px;         /* Altura uniforme */
+    width: 100%;
+    object-fit: cover;      /* Preenche sem distorcer */
+    transition: transform 0.3s ease;
+}
+
+.product-card img:hover {
+    transform: scale(1.05); /* Zoom suave na imagem */
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.product-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.product-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-card .btn {
+    background-color: #0f131a;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background-color: #ffc107; /* Dourado ao passar o mouse */
+    color: #000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .product-card img {
+        height: 200px; /* Ajuste para mobile */
+    }
+}
+
+
+/* Footer profissional */
+footer h5 {
+    font-size: 1.1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer h5:hover {
+    transform: scale(1.05);
+    color: #ffb700; /* Amarelo vibrante no hover */
+}
+
+/* Ícone de login em círculo branco */
+.login-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;          /* Círculo */
+    background-color: #ffffff;   /* Fundo branco */
+    color: #000000;              /* Ícone preto */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.login-circle:hover {
+    transform: scale(1.2);       /* Cresce levemente */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    color: #ffb700;              /* Ícone dourado ao passar o mouse */
+}
+
+
+/* Botão fixo voltar ao topo sempre visível */
+#btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block; /* sempre visível */
+    z-index: 9999;
+    border: none;
+    cursor: pointer;
+}
+
+#btnTop i {
+    color: #000 !important; /* ícone preto */
+}
+
+#btnTop:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+/* Botão minimalista */
+.btn-top-minimal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;       /* Borda preta */
+    border-radius: 50%;           /* Botão circular */
+    background-color: transparent;/* Fundo transparente */
+    color: #000;                  /* Cor da seta */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;    /* Hover suave */
+    cursor: pointer;
+}
+
+/* Hover suave: aumenta leve e borda mais fina */
+.btn-top-minimal:hover {
+    transform: scale(1.2);
+    border-width: 1px;            /* Borda mais fina */
+}
+
+/* ========================= */
+/* Responsividade */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 2rem;
+    }
+}
